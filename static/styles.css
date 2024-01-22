@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url(images/wallpaperflare.com_wallpaper\ \(1\).jpg);
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-family: "Bebas Neue", Times, serif;
+    font: bold;
+
+}
+
+form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+
+p{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    
+}
+
+
+small{
+    margin-top: 40%;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+nav div{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    background-color: white;
+}
+
+input[type="submit"] {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.answer{
+    background-color: #e5e5ff; /* Set background color for the answer bubble */
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%; /* Set the maximum width for the answer bubble */
+    margin: 10px auto;
+    text-align: center;
+}
+
+.responseTime {
+    font-size: 12px; /* Adjust the font size for the response time */
+    color: #666; /* Set color for the response time text */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }

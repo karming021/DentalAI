@@ -1,0 +1,43 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dental Generative AI System</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Dental Generative AI System</h1>
+    <p> Hello, I am a generative AI Chatbot designed by Law Kar Ming. How may I assist you in your dentistry needs?</p>
+    <form method="post" action="/get_prompt">
+        <input type="text" name="query" placeholder="Please enter a prompt">
+        <input type="submit" value="Send">
+    </form>
+    <div>
+        {% if response %}
+        <div class="answer">
+            <p>{{ response }}</p>
+        {% endif %}
+
+        {% if elapsed_time %}
+        <p class="responseTime">Response time: {{ "{:.2f}".format(elapsed_time) }} seconds</p>
+
+
+        </div>
+        {% endif %}
+    </div>
+
+    <p class="small">Note : For more accurate answers, try asking questions like: <br>
+        How often should I brush my teeth? <br>
+        What kind of toothpaste is recommended for preventing tooth decay? <br>
+        Is flossing important for maintaining oral health?</p2>
+
+</body>
+
+
+<footer>
+    <p>Webpage By Law Kar Ming</p>
+    <p><a href="mailto:1201102678@student.mmu.edu.my">1201102678@student.mmu.edu.my</a></p>
+  </footer>
+
+</html>
